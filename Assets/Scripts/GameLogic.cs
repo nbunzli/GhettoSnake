@@ -103,6 +103,11 @@ public class GameLogic : MonoBehaviour
 	
 	void Update() 
 	{
+		if(Input.GetKeyDown(KeyCode.Escape)) 
+		{ 
+			Application.Quit(); 
+		}
+	
 		UpdateSnakeRotation();
 
 		switch(CurrentState)
